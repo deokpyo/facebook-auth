@@ -50,9 +50,8 @@ var Home = (function (Component) {
     },
     registerVisitor: {
       value: function registerVisitor() {
-        console.log("createUser: " + JSON.stringify(this.state));
         this.props.register(this.state).then(function (data) {
-          console.log(data);
+          window.location.href = "/admin";
         })["catch"](function (err) {
           alert("Error: " + err.message);
         });
