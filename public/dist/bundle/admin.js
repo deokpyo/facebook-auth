@@ -1,6 +1,6 @@
-webpackJsonp([0],{
+webpackJsonp([1],{
 
-/***/ 38:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27,12 +27,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = _react2.default.createElement(
   _reactRedux.Provider,
   { store: _stores2.default.configure(null) },
-  _react2.default.createElement(_containers.Home, null)
+  _react2.default.createElement(_containers.Admin, null)
 );
 
 _reactDom2.default.render(app, document.getElementById("root"));
 
 /***/ })
 
-},[38]);
-//# sourceMappingURL=app.map
+},[101]);
+//# sourceMappingURL=admin.map

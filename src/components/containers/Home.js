@@ -25,11 +25,10 @@ class Home extends Component {
   }
 
   registerVisitor() {
-    console.log("createUser: " + JSON.stringify(this.state));
     this.props
       .register(this.state)
       .then(data => {
-        console.log(data);
+        window.location.href = "/admin";
       })
       .catch(err => {
         alert("Error: " + err.message);
